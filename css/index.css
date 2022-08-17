@@ -1,0 +1,83 @@
+/* COLOCAR NORMALIZE.CSS */
+
+:root {
+  --white: #FCFAF7;
+  --green: #2BA58E;
+
+  --title: "SF Slapstick Comic", "Helvetica", "Arial", sans-serif;
+  --body: "Segoe UI", "Helvetica", "Arial", sans-serif;
+}
+
+body{
+  background-color: var(--white);
+
+  font-family: var(--body);
+}
+#content{
+  padding: 25px;
+}
+img{
+  max-width: 100%;
+}
+nav{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+/* Mobile menu sanduíche */
+#mobile-nav{
+  display: inline-flex;
+  width: 100%;
+
+  justify-content: center;
+  position: relative;
+}
+#mobile-nav .logo{
+  height: 75px;
+  margin: 5px auto;
+}
+#mobile-nav .icon{
+  width: 50px;
+
+  position: absolute;
+  left: 10px;
+  top: calc(50% - 25px);
+}
+
+/* Mobile menu open */
+#navbar{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+
+  top: 0;
+  left: -100vw;
+
+  transition: ease-in-out .7s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  font-family: var(--title);
+  font-size: clamp(24px, 4vw ,60px);
+}
+#navbar ul{
+  padding: 0;
+  width: 100%;
+  margin-bottom: 5vh;
+}
+#navbar ul li{
+  list-style: none;
+  text-align: center;
+  margin: 2em;
+}
+#navbar img{
+  width: 175px;
+  margin: 0 auto 25px;
+}
+#navbar .close-icon{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
