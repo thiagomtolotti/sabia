@@ -41,33 +41,37 @@
   </nav>
 
   <nav id="navbar">
-    <ul>
-      <li>Home</li>
-      <a href="#">
-        <li>Cartilha</li>
-      </a>
-      <a href="#">
-        <li>Vídeos</li>
-      </a>
-      <a href="#">
-        <li>Sonoras</li>
-      </a>
-      <a href="#">
-        <li>Cards</li>
-      </a>
-    </ul>
+    <div class="container">
+      <ul>
+        <a href="#">
+          <li>Home</li>
+        </a>
+        <a href="#">
+          <li>Cartilha</li>
+        </a>
+        <a href="#">
+          <li>Vídeos</li>
+        </a>
+        <a href="#">
+          <li>Sonoras</li>
+        </a>
+        <a href="#">
+          <li>Cards</li>
+        </a>
+      </ul>
 
-    <a href="#">
-      <img src="img/Reduzido_MonoBranco.png" alt="">
+      <a href="#">
+        <img src="img/Reduzido_MonoBranco.png" alt="">
+      </a>
+    </div>
 
     <div class="close-icon" onclick="closeMenu()">X</div>
-    </a>
   </nav>
 
   <div id="content">
   <section id="hero">
       <img src="img/Hero_Grande.png" alt="">
-      <div class="">
+      <div class="container">
         <img src="img/sabia.svg" alt="">
         <p>Assim como o sabiá, que existe em quase todo o Brasil, os <strong>crimes eleitorais</strong> também estão por aí.</p>
         <p>Cuidado! Às vezes uma ação que não parece nada de mais pode ser um crime eleitoral... e você nem sabia.</p>
@@ -105,7 +109,7 @@
   </section>
   <section id="sobre">
     <h2>Sobre</h2>
-    <div class="">
+    <div class="container">
         <p>As Metas Nacionais do Poder Judiciário representam o compromisso dos tribunais brasileiros com o aperfeiçoamento da prestação jurisdicional, buscando proporcionar à sociedade um serviço mais célere, com maior eficiência e qualidade.</p>
         <p>O Poder Judiciário Brasileiro é precursor, no mundo, da institucionalização da Agenda 2030 em seu Planejamento Estratégico, tendo celebrado Pacto pela implementação dos ODS da Agenda 2030 no Poder Judiciário com a Organização das Nações Unidas em agosto de 2019.</p>
         <p>Um dos grandes objetivos é realizar ações de prevenção ou desjudicialização de litígios voltadas aos objetivos de desenvolvimento sustentável (ODS), da Agenda 2030</p>
@@ -148,8 +152,8 @@
       <input type="text" name="" value="">
       <label for="">Mensagem</label>
       <textarea name="name" rows="8" cols="80" id="mensagem"></textarea>
+      <button type="button" name="button">Enviar Mensagem</button>
     </form>
-    <button type="button" name="button">Enviar Mensagem</button>
   </section>
   </div>
 
@@ -163,5 +167,7 @@
 
 <!--
   - Logo TRE-PR em EPS
-  - BG's circulares
+  - Popular cards download
+  - Popular ODS's
+  - a tags no local apropriado
  -->

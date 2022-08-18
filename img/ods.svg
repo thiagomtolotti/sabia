@@ -1,17 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="331.799" height="331.813" viewBox="0 0 331.799 331.813">
-  <defs>
-    <filter id="Retângulo_109" x="0" y="0" width="331.799" height="331.813" filterUnits="userSpaceOnUse">
-      <feOffset input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="15" result="blur"/>
-      <feFlood flood-opacity="0.302"/>
-      <feComposite operator="in" in2="blur"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
-  </defs>
-  <g id="Grupo_98" data-name="Grupo 98" transform="translate(-524.347 -474.271)">
-    <g transform="matrix(1, 0, 0, 1, 524.35, 474.27)" filter="url(#Retângulo_109)">
-      <rect id="Retângulo_109-2" data-name="Retângulo 109" width="241.799" height="241.813" transform="translate(45 45)" fill="#005384"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="241.799" height="241.813" viewBox="0 0 241.799 241.813">
+  <g id="Grupo_82" data-name="Grupo 82" transform="translate(-569.347 -519.271)">
+    <rect id="Retângulo_109" data-name="Retângulo 109" width="241.799" height="241.813" transform="translate(569.347 519.271)" fill="#005384"/>
     <g id="Grupo_66" data-name="Grupo 66" transform="translate(587.95 539.552)">
       <path id="Caminho_96" data-name="Caminho 96" d="M579.851,539.569v8.558h.073l5.753-5.969h.073v37.32h8.2V530.722h-6.541Z" transform="translate(-579.851 -530.722)" fill="#fff"/>
     </g>
