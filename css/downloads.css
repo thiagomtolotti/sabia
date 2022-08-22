@@ -1,0 +1,48 @@
+h1{
+    font-family: var(--title);
+    text-align: center;
+    font-size: 4em;
+
+    color: var(--orange);
+    text-shadow: 3px 3px 0 var(--dark-orange);
+}
+
+#modal-container{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.modal-download{
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+
+    margin: 50px 25px;
+    padding: 25px;
+    border-radius: 25px;
+
+    position: relative;
+
+    max-width: 265px;
+}
+
+.modal-download h2{
+    margin: 10px auto;
+}
+
+.modal-download p{
+    font-size: 1.8em;
+    font-weight: 500;
+    margin: 0 auto .7em;
+}
+
+.modal-download a{
+    color: var(--white);
+}
+
+.download-icon{
+    position: absolute;
+    bottom: 25px;
+}
