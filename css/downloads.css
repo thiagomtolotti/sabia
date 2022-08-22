@@ -2,47 +2,78 @@ h1{
     font-family: var(--title);
     text-align: center;
     font-size: 4em;
+    letter-spacing: 3px;
 
     color: var(--orange);
     text-shadow: 3px 3px 0 var(--dark-orange);
+
+    margin: 1em 0;
 }
 
-#modal-container{
-    display: flex;
-    flex-wrap: wrap;
+#modal-container .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-    justify-content: center;
+  max-width: 1800px;
+  margin: 0 auto;
 }
+.modal-download a:first-child{
+  color: var(--white);
 
+  padding: 25px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .modal-download{
     background-color: var(--green);
     color: var(--white);
-    text-align: center;
 
     margin: 50px 25px;
-    padding: 25px;
     border-radius: 25px;
 
     position: relative;
 
-    max-width: 265px;
-}
+    width: 100%;
+    max-width: 340px;
 
+    display: flex;
+    flex-direction: column;
+
+    transition: .3s ease-in-out;
+    box-shadow: 0 0 0 var(--dark-green);
+}
 .modal-download h2{
-    margin: 10px auto;
+  font-size: 3em;
+  margin: 10px auto;
 }
-
 .modal-download p{
-    font-size: 1.8em;
+    font-size: 1.5em;
+    line-height: 1.2;
     font-weight: 500;
     margin: 0 auto .7em;
 }
-
-.modal-download a{
-    color: var(--white);
+.modal-download img{
+  margin: auto auto 25px;
+}
+.modal-download .download-icon{
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  margin: 0;
+}
+.modal-download:hover{
+  box-shadow: 0 12px 0 var(--dark-green);
+  transform: scale(1.05);
 }
 
-.download-icon{
-    position: absolute;
-    bottom: 25px;
-}
+
+/* TODO */
+
+/*
+  - Imagens Downloads (cards tb)
+  - Lightbox JS
+*/

@@ -17,7 +17,7 @@ function renderNav(){
           <a href="./index.html"> \
             <li>Home</li> \
           </a> \
-          <a href="#"> \
+          <a href="https://www.tre-pr.jus.br/++theme++justica_eleitoral/pdfjs/web/viewer.html?file=https://www.tre-pr.jus.br/eleitor/sabia/arquivos/tre-pr-voce-sabia-sabia-cartilha/@@download/file/tre-pr-cartilha-voce-sabia-sabaia-v3.pdf" target="_blank"> \
             <li>Cartilha</li> \
           </a> \
           <a href="./videos.html"> \
@@ -30,7 +30,7 @@ function renderNav(){
             <li>Cards</li> \
           </a> \
         </ul> \
-        <a href="#"> \
+        <a href="https://www.tre-pr.jus.br"> \
           <img src="img/Reduzido_MonoBranco.png" alt=""> \
         </a> \
       </div> \

@@ -1,5 +1,3 @@
-const key = "videos"
-
 class Modal {
     constructor(obj){
         this.titulo = obj.title;
@@ -12,25 +10,25 @@ class Modal {
     }
 
     render(){
-        let modal = `<a href="${this.link}"> \
-            <div class="modal-download"> \
-                <h2>${this.titulo}</h2> \
-                <p>${this.crimeName}</p> \
-                <img src="${this.imgPath}" alt=""> \
-                <a href="${this.linkDownload}"> \
-                    <img src="img/download_icon.svg" alt="" class="download-icon"> \
-                </a> \
-            </div> \
-        </a>`
+      let modal = `<div class='modal-download'>\
+                      <a href=""> \
+                        <h2>${this.titulo}</h2>\
+                        <p>${this.crimeName}</p>\
+                        <img src='img/crime_1.png' alt=''>\
+                        <a href='${this.linkDownload}'>\
+                            <img src='img/download_icon.svg' alt='' class='download-icon'>\
+                        </a>\
+                      </a>
+                    </div>`;
 
-		document.querySelector("#modal-container").insertAdjacentHTML("beforeend", modal)
+  		document.querySelector("#modal-container .container").insertAdjacentHTML("beforeend", modal)
     }
 }
 
 fetch("js/downloads.json")
     .then(response => response.json())
     .then(data => {
-        for(let i = 0; i < 10; i++){
+        for(let i = 0; i < data.crimes.length ; i++){
             let obj = {
                 title: `Crime ${i+1}`,
                 crimeName: data.crimes[i],
