@@ -71,6 +71,7 @@ h1{
   transform: scale(1.05);
 }
 
+<<<<<<< HEAD
 .card a:first-child{
   padding: 0;
 }
@@ -101,6 +102,16 @@ h1{
 .card:hover::after{
   opacity: 1;
 }
+=======
+.card{
+  max-width: 250px;
+  overflow: hidden;
+}
+.card a:first-child{
+  padding: 0;
+}
+
+>>>>>>> 8ffc422086013eb5e58349cfa4c98fd255dbb742
 
 /* TODO */
 

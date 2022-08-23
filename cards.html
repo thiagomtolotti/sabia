@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="css/downloads.css">
+  <link rel="stylesheet" href="css/glightbox.min.css">
 
   <script src="js/master.js" defer></script>
 </head>
@@ -29,7 +30,7 @@
 <body>
   <h1>Cards</h1>
 
-  <div id="card-container">
+  <div id="modal-container">
     <div class="container">
       <div class="modal-download card">
         <a href="#">
@@ -130,4 +131,10 @@
 
     </div>
   </div>
+
+  <!-- script Lightbox -->
+  <script src="js/glightbox.min.js"></script>
+  <script>
+      const lightbox = GLightbox();
+  </script>
 </body>
