@@ -89,8 +89,9 @@ h1{
   content: '';
   cursor: pointer;
   display: block;
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.1) 30%);
+  background: rgba(0,0,0,.3);
+  background: linear-gradient(0deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.1) 70%);
+
   pointer-events: none;
   position: absolute;
   width: 100%;
@@ -106,5 +107,4 @@ h1{
 
 /*
   - Imagens Downloads (cards tb)
-  - SVG shadow
 */
