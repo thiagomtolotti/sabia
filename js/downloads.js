@@ -11,7 +11,7 @@ class Modal {
 
     render(){
       let modal = `<div class='modal-download'>\
-                      <a href=""> \
+                      <a href="${this.link}" class="glightbox"> \
                         <h2>${this.titulo}</h2>\
                         <p>${this.crimeName}</p>\
                         <img src='img/crime_1.png' alt=''>\
@@ -33,10 +33,18 @@ fetch("js/downloads.json")
                 title: `Crime ${i+1}`,
                 crimeName: data.crimes[i],
                 imgPath: `img/crime_${i+1}.png`,
-                link: data[key].links[i],
+                link: '',
                 linkDownload: data[key].linksDownload[i]
+            }
+
+            if(key === "sonoras"){
+                obj.link = '#aa'
+            }else{
+                obj.link = data[key].links[i]
             }
 
             new Modal(obj)
         }
+        
+        const lightbox = GLightbox();
     })

@@ -1,12 +1,11 @@
 {
     "crimes" : ["Violação do sigilo do voto", "Boca de urna", "Falsidade ideológica", "Injúria e difamação eleitoral", "Divulgação de notícia falsa na propaganda eleitoral", "Transporte de eleitores", "Boca de urna virtual", "Calúnia e difamação na propaganda eleitoral", "Compra de voto", "Divulgação de pesquisa eleitoral fraudulenta"],
+    "imgPath": ["", ""],
     "videos" : {
-        "imgPath": ["", ""],
         "linksDownload": ["", ""],
-        "links": ["aa", ""]
+        "links": ["https://youtu.be/X3u7z6Qjq9k", "https://youtu.be/itsGRUBnx30","https://youtu.be/E7XCMoZt8qk","https://youtu.be/DsK1LOPnkYE","https://youtu.be/rh64PzS8Ymo", "https://youtu.be/126pCrh7L18", "https://youtu.be/wB_vFZPtnpY","https://youtu.be/VRCOPlxyO04","https://youtu.be/waI-HKtDKEY","https://youtu.be/mVjn6DpSWlY"]
     },
     "sonoras" : {
-        "linksDownload": ["", ""],
-        "links": ["", ""]
+        "linksDownload": ["", ""]
     }
 }

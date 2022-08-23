@@ -20,7 +20,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <script type="text/javascript" defer>
-    const key = "videos"
+    const key = "sonoras"
   </script>
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -30,14 +30,24 @@
   <script src="js/master.js" defer></script>
   <script src="js/downloads.js" defer></script>
 
+  <!-- script Lightbox -->
+  <link rel="stylesheet" href="css/glightbox.min.css">
+  <script src="js/glightbox.min.js" defer></script>
 </head>
 
 <body>
   <h1>Sonoras</h1>
 
+  <div id="aa">
+    <audio controls>
+      <source src="https://www.justicaeleitoral.jus.br/audios/tre-pr-voce-sabia-sabia-sonora-01/@@streaming/file/tre-pr-sonora-voce-sabia-sabia-01.mp3">
+    </audio>
+  </div>
+
   <div id="modal-container">
     <div class="container">
-
     </div>
   </div>
+
+  <!-- Clica no modal -> Ativa o script que cria a div com o autoplay -> Abre o lightbox -> Toca o modal -->
 </body>
