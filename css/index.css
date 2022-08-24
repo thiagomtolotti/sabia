@@ -151,12 +151,6 @@
   margin: 20px auto 50px;
 }
 
-/* Footer */
-footer{
-  background-color: var(--tre-blue);
-  color: var(--white);
-}
-
 @media screen and (min-width: 768px){
   /* Hero */
   #hero div img{

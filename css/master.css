@@ -2,7 +2,7 @@
     --white: #FCFAF7;
     --green: #2BA58E;
     --dark-green: #00332B;
-    --yellow : #FC9E19;
+    --yellow: #FC9E19;
     --dark-yellow: #B06E11;
     --orange: #E74F1D;
     --dark-orange: #A13714;
@@ -10,7 +10,7 @@
     --tre-blue: #0A375C;
 
     --title: "SF Slapstick Comic", "Helvetica", "Arial", sans-serif;
-    --body: "Segoe UI", "Helvetica", "Arial", sans-serif;
+    --body: "Poppins", "Segoe UI", "Helvetica", "Arial", sans-serif;
 }
 body{
 background-color: var(--white);
@@ -31,8 +31,8 @@ section{
     min-height: 90vh;
 }
 p, ol li{
-    font-size: 20px;
-    line-height: 1.3;
+    font-size: 18px;
+    line-height: 1.4;
 }
 ol, ul{
     padding: 0;
@@ -120,6 +120,53 @@ a{
     top: 15px;
     right: 25px;
 }
+/* Footer */
+footer{
+  background-color: var(--tre-blue);
+  color: var(--white);
+  font-family: var(--body);
+  text-align: center;
+  line-height: 1.5;
+
+  padding: 25px;
+}
+.credito-container{
+  text-align: center;
+  margin: 3em;
+  width: 100%;
+}
+.credito-container h3{
+  font-family: var(--body);
+  letter-spacing: 0;
+  font-size: 1.5em;
+}
+.credito{
+  margin: 2em 0;
+}
+.credito p:not(:last-child){
+  font-weight: 600;
+  font-size: 18px;
+}
+.credito p:last-child{
+  font-style: italic;
+  font-size: 1em;
+  font-size: 14px;
+}
+.credito p{
+  margin: .5em 0;
+}
+footer .container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 480px){
+  .credito-container{
+    max-width: 300px;
+    text-align: left;
+  }
+}
 
 @media screen and (min-width: 990px){
     /* Navs */
@@ -170,7 +217,6 @@ a{
     #navbar ul a:hover > li::after{
       transform: scaleX(1);
     }
-
 
     h2{
       font-size: 4em;
