@@ -93,64 +93,6 @@
   transform: scale(1.02);
 }
 
-/* Contato */
-#contato{
-  background-color: var(--orange);
-}
-#contato form{
-  display: flex;
-  flex-direction: column;
-
-  max-width: 680px;
-  margin: 0 auto;
-}
-#contato label{
-  font-family: var(--title);
-  font-weight: bold;
-  font-size: 1.7em;
-
-  color: var(--white);
-  text-shadow: 3px 3px 0 rgba(0,0,0,.3);
-
-  margin: 20px;
-}
-#contato input, #contato textarea{
-  border: none;
-  box-shadow: 5px 5px 0 rgba(0,0,0,.3);
-  border-radius: 10px;
-
-  font-size: 20px;
-
-  padding: 8px 20px;
-  margin-bottom: 20px;
-}
- #contato textarea{
-   padding: 10px 15px;
-   resize: none;
- }
-#contato .container .container{
-  display: flex;
-  flex-direction: column;
-}
-#contato button{
-  font-family: var(--title);
-  font-weight: bold;
-  font-size: 1.7em;
-
-  text-shadow: 3px 3px 0 rgba(0,0,0,.3);
-  box-shadow: 5px 5px 0 rgba(0,0,0,.3);
-
-  background-color: var(--yellow);
-  color: var(--white);
-
-  border: none;
-  border-radius: 100px;
-  padding: 15px 30px;
-  width: 100%;
-
-  margin: 20px auto 50px;
-}
-
 @media screen and (min-width: 768px){
   /* Hero */
   #hero div img{
@@ -172,19 +114,6 @@
   /* Sobre */
   #sobre{
     padding-bottom: 10vh;
-  }
-
-  /* Contato */
-  #contato .container{
-    display: flex;
-    justify-content: space-between;
-  }
-  #contato .container .container{
-    width: 45%;
-  }
-  #contato button{
-    width: auto;
-    margin-right: 0;
   }
 }
 

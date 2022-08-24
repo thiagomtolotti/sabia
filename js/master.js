@@ -44,62 +44,77 @@ renderNav()
 
 // Adicionar footer
 function renderFooter(){
-  let footer = `<footer><div class=""> \
-    <p><strong>2022</strong></p> \
-    <p><strong>Tribunal Regional Eleitoral do Paraná</strong></p>
-    <p>Rua João Parolin, 224 - Prado Velho - Curitiba - PR<br>CEP 80.220-290 - Telefone (41) 3330-8880</p> \
-  </div> \
-
-  <!-- Logos -->
-  <div class="container"> \
-    <div class="credito-container"> \
-      <h3>Projeto</h3> \
-      <div class="credito"> \
-        <p>LIODS Pinha de Ideias - Coordenadoria de Inovação e Sustentabilidade</p> \
-        <p>Produção</p> \
+  let footer = `<footer> \
+    <div class=""> \
+      <p><strong>2022</strong></p> \
+      <p><strong>Tribunal Regional Eleitoral do Paraná</strong></p> \
+      <p>Rua João Parolin, 224 - Prado Velho - Curitiba - PR<br>CEP 80.220-290 - Telefone (41) 3330-8880</p> \
+      <p>Contato: <a href="mailto:liods@tre-pr.jus.br" target="_blank">liods@tre-pr.jus.br</a></p>
+    </div> \
+    <div class="logos"> \
+      <a href="https://www.instagram.com/treparana/" target="_blank"> \
+        <img src="img/icons/Instagram.png" alt="" width="38px"> \
+      </a> \
+      <a href="https://pt-br.facebook.com/treparana" target="_blank"> \
+        <img src="img/icons/Facebook.png" alt="" width="38px"> \
+      </a> \
+      <a href="https://www.tiktok.com/@tre_pr" target="_blank"> \
+        <img src="img/icons/Tiktok.png" alt="" width="38px"> \
+      </a> \
+      <a href="https://tre-pr.jus.br/" target="_blank"> \
+        <img src="img/icons/Website.png" alt="" width="38px"> \
+      </a> \
+    </div> \
+    <div class="container"> \
+      <div class="credito-container"> \
+        <h3>Projeto</h3> \
+        <div class="credito"> \
+          <p>LIODS Pinha de Ideias - Coordenadoria de Inovação e Sustentabilidade</p> \
+          <p>Produção</p> \
+        </div> \
+        <div class="credito"> \
+          <p>Simone Hembecker - Seção de Comunicação Visual</p> \
+          <p>Argumento, projeto gráfico, ilustração, vídeos animados</p> \
+        </div> \
+        <div class="credito"> \
+            <p>Thiago Miquelleto Tolotti - Seção de Comunicação Visual</p> \
+            <p>Website - Projeto Visual e Web</p> \
+        </div> \
+        <div class="credito"> \
+            <p>Núcleo de Portais Web</p> \
+            <p>Website - Publicação</p> \
+        </div> \
+        <div class="credito"> \
+          <p>Assessoria Jurídica da Presidência</p> \
+          <p>Revisão Jurídica</p> \
+        </div> \
       </div> \
-      <div class="credito"> \
-        <p>Simone Hembecker - Seção de Comunicação Visual</p> \
-        <p>Argumento, projeto gráfico, ilustração, vídeos animados</p> \
-      </div> \
-      <div class="credito"> \
-          <p>Thiago Miquelleto Tolotti - Seção de Comunicação Visual</p> \
-          <p>Website - Projeto Visual e Web</p> \
-      </div> \
-      <div class="credito"> \
-          <p>Núcleo de Portais Web</p> \
-          <p>Website - Publicação</p> \
-      </div> \
-      <div class="credito"> \
-        <p>Assessoria Jurídica da Presidência</p> \
-        <p>Revisão Jurídica</p> \
+      <div class="credito-container"> \
+        <h3>Sonoras de rádio</h3> \
+        <div class="credito"> \
+          <p>Seção de Audiovisual</p> \
+          <p>Produção</p> \
+        </div> \
+        <div class="credito"> \
+          <p>Beatriz Melo</p> \
+          <p>Claudia Afanio</p> \
+          <p>Dirceu Wolff dos Santos Lima Junior</p> \
+          <p>Helton Sanchez</p> \
+          <p>Luciano Eduardo França</p> \
+          <p>Paulo Cezar Ribeiro</p> \
+          <p>Simone Hembecker</p> \
+          <p>Sinter Maiki de C. M. e Santana</p> \
+          <p>Valcir Mombach</p> \
+          <p>Vilmar Chequeleiro</p> \
+          <p>Vozes</p> \
+        </div> \
+        <div class="credito"> \
+          <p>Banda Fora da Pauta – TRE-PR</p> \
+          <p>Música</p> \
+        </div> \
       </div> \
     </div> \
-    <div class="credito-container"> \
-      <h3>Sonoras de rádio</h3> \
-      <div class="credito"> \
-        <p>Seção de Audiovisual</p> \
-        <p>Produção</p> \
-      </div> \
-      <div class="credito"> \
-        <p>Beatriz Melo</p> \
-        <p>Claudia Afanio</p> \
-        <p>Dirceu Wolff dos Santos Lima Junior</p> \
-        <p>Helton Sanchez</p> \
-        <p>Luciano Eduardo França</p> \
-        <p>Paulo Cezar Ribeiro</p> \
-        <p>Simone Hembecker</p> \
-        <p>Sinter Maiki de C. M. e Santana</p> \
-        <p>Valcir Mombach</p> \
-        <p>Vilmar Chequeleiro</p> \
-        <p>Vozes</p> \
-      </div> \
-      <div class="credito"> \
-        <p>Banda Fora da Pauta – TRE-PR</p> \
-        <p>Música</p> \
-      </div> \
-    </div> \
-  </div></footer>`
+  </footer>`
 
   document.body.insertAdjacentHTML("beforeend", footer);
 }

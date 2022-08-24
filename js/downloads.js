@@ -4,7 +4,8 @@ class Modal {
         this.crimeName = obj.crimeName;
         this.imgPath = obj.imgPath;
         this.link = obj.link;
-        this.linkDownload = obj.linkDownload;
+        this.downloadPath = obj.downloadPath;
+        this.crimeDownload = obj.crimeName.replaceAll(' ', '_') + obj.extension
 
         this.render();
     }
@@ -15,7 +16,7 @@ class Modal {
                         <h2>${this.titulo}</h2>\
                         <p>${this.crimeName}</p>\
                         <img src='${this.imgPath}' alt=''>\
-                        <a href='${this.linkDownload}'>\
+                        <a download='${this.crimeDownload}' href='${this.linkDownload}'>\
                             <img src='img/download_icon.svg' alt='' class='download-icon'>\
                         </a>\
                       </a>
@@ -34,7 +35,8 @@ fetch("js/downloads.json")
                 crimeName: data.crimes[i],
                 imgPath: `img/crimes/crime_${i+1}.jpg`,
                 link: '',
-                linkDownload: data[key].linksDownload[i]
+                downloadPath: data[key].downloadPath[i],
+                extension: (key === "videos") ? ".mp4" : ".mp3"
             }
 
             if(key === "sonoras"){
@@ -45,12 +47,13 @@ fetch("js/downloads.json")
                 container.classList.add('hidden')
 
                 container.innerHTML = `
+                    <img src="../img/bg-sonoras.jpeg">
                     <audio controls> \
                         <source src="https://www.justicaeleitoral.jus.br/audios/tre-pr-voce-sabia-sabia-sonora-${index}/@@streaming/file/tre-pr-sonora-voce-sabia-sabia-${index}.mp3"> \
                     </audio>`
 
                 document.body.insertAdjacentElement('beforeend', container)
-                
+
                 obj.link = `#sonora-container-${index}`
             }else{
                 obj.link = data[key].links[i]
@@ -58,7 +61,7 @@ fetch("js/downloads.json")
 
             new Modal(obj)
         }
-        
+
         const lightbox = GLightbox();
     })
 

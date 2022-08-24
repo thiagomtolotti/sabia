@@ -17,6 +17,7 @@ h1{
 
   max-width: 1800px;
   margin: 0 auto;
+  margin-bottom: 20vh;
 }
 .modal-download a:first-child{
   color: var(--white);
@@ -57,7 +58,7 @@ h1{
     margin: 0 auto .7em;
 }
 .modal-download img{
-  margin: 25px auto;
+  margin: auto 25px 25px;
 }
 .modal-download .download-icon{
   position: absolute;
@@ -109,17 +110,17 @@ h1{
 
 audio{
   width: 100%;
+  min-height: 50px;
+}
+.gslide-inline{
+  height: auto!important;
 }
 .gslide-inline .ginlined-content{
+  height: auto!important;
   padding: 0;
   display: flex!important;
   flex-direction: column;
   justify-content: flex-end;
-
-  background-image: url('../img/bg-sonoras.jpeg');
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 /* TODO */
