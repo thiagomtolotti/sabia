@@ -54,7 +54,7 @@ fetch("js/downloads.json")
 
                 document.body.insertAdjacentElement('beforeend', container)
 
-                obj.link = `#sonora-container-${index}`
+                obj.link = `multimedia/iframes/iframe.html `
             }else{
                 obj.link = data[key].links[i]
             }

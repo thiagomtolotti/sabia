@@ -115,9 +115,10 @@ audio{
 .gslide-inline{
   height: auto!important;
 }
-.gslide-inline .ginlined-content{
-  height: auto!important;
+iframe body, .iframe-container{
+  height: 100%;
   padding: 0;
+  margin: 0;
   display: flex!important;
   flex-direction: column;
   justify-content: flex-end;
