@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="26.632" height="37.596" viewBox="0 0 26.632 37.596">
   <style>.shadow{-webkit-filter: drop-shadow( 0 0 3px rgba(0, 0, 0, .7));
-  filter: drop-shadow( 0 0 3px rgba(0, 0, 0, .7));}</style>
+  filter: drop-shadow( 0 0 3px rgba(0, 0, 0, .5));}</style>
   <g id="Grupo_147" data-name="Grupo 147" transform="translate(-474.028 -764)" class="shadow">
     <rect id="Retângulo_165" data-name="Retângulo 165" width="24.392" height="4.206" transform="translate(475.147 797.39)" fill="#fff"/>
     <path id="Caminho_189" data-name="Caminho 189" d="M550,505.415l-2.974-2.974-8.239,8.239v-21.6h-4.205v21.6l-8.239-8.239-2.974,2.974,13.316,13.3Z" transform="translate(-49.344 274.916)" fill="#fff"/>

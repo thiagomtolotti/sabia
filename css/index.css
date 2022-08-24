@@ -168,10 +168,11 @@ footer{
     margin: 10vh auto;
   }
   #downloads .download{
-    transition: .3s ease-in-out;
+    transition: .5s ease-in-out;
   }
   #downloads .download:hover{
     box-shadow: 15px 15px 0 var(--dark-orange);
+    transform: scale(1.05);
   }
 
   /* Sobre */

@@ -103,6 +103,25 @@ h1{
   opacity: 1;
 }
 
+.hidden{
+  display: none;
+}
+
+audio{
+  width: 100%;
+}
+.gslide-inline .ginlined-content{
+  padding: 0;
+  display: flex!important;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background-image: url('../img/bg-sonoras.jpeg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
 /* TODO */
 
 /*

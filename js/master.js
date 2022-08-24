@@ -42,7 +42,16 @@ function renderNav(){
 
 renderNav()
 
+// Adicionar footer
+// function renderFooter(){
+//   let footer = ``
+
+//   document.body.insertAdjacentHTML("beforeend", footer);
+// }
+
+// renderFooter();
+
+// TODO
 /*
-TODO
-- JSON Populate
+  - Adicionar footer em todas as páginas
 */
