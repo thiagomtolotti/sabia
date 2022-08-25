@@ -2,9 +2,18 @@
 <style media="screen">
   body{margin:0;}
 </style>
+
 <div class="iframe-container">
   <img src="../../img/bg-sonoras.jpeg">
-  <audio controls autoplay> \
-      <source src="https://www.justicaeleitoral.jus.br/audios/tre-pr-voce-sabia-sabia-sonora-01/@@streaming/file/tre-pr-sonora-voce-sabia-sabia-01.mp3"> \
+  <audio controls autoplay id="player">
   </audio>
 </div>
+<script>
+  let searchURL = new URLSearchParams(location.search)
+  let index = searchURL.get("id")
+
+  let audio = document.createElement('source')
+  audio.src = `https://www.justicaeleitoral.jus.br/audios/tre-pr-voce-sabia-sabia-sonora-${index}/@@streaming/file/tre-pr-sonora-voce-sabia-sabia-${index}.mp3`
+
+  document.querySelector('.iframe-container audio').insertAdjacentElement("beforeend", audio)
+</script>
