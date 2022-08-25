@@ -5,17 +5,19 @@ class Modal {
         this.imgPath = obj.imgPath;
         this.link = obj.link;
         this.downloadPath = obj.downloadPath;
-        this.crimeDownload = obj.crimeName.replaceAll(' ', '_') + obj.extension
+        this.crimeDownload = obj.crimeName.replaceAll(' ', '_') + obj.extension;
+        this.altTag = obj.altTag
 
         this.render();
     }
 
     render(){
+      console.log(this.altTag)
       let modal = `<div class='modal-download'>\
                       <a href="${this.link}" class="glightbox"> \
                         <h2>${this.titulo}</h2>\
                         <p>${this.crimeName}</p>\
-                        <img src='${this.imgPath}' alt=''>\
+                        <img src='${this.imgPath}' alt="${this.altTag}">\
                         <a download='${this.crimeDownload}' href='${this.linkDownload}'>\
                             <img src='img/download_icon.svg' alt='' class='download-icon'>\
                         </a>\
@@ -34,6 +36,7 @@ fetch("js/downloads.json")
                 title: `Crime ${i+1}`,
                 crimeName: data.crimes[i],
                 imgPath: `img/crimes/crime_${i+1}.jpg`,
+                altTag: data.altTag[i],
                 link: '',
                 downloadPath: data[key].downloadPath[i],
                 extension: (key === "videos") ? ".mp4" : ".mp3"
@@ -52,7 +55,7 @@ fetch("js/downloads.json")
         const lightbox = GLightbox();
         lightbox.on('slide_after_load', ()=>{
             let iframe = document.querySelectorAll('.gslide.loaded:not(.current) iframe')
-            
+
             iframe.forEach((iframe)=>{
                 let audio = iframe.contentWindow.document.querySelector('audio')
                 audio.pause();
@@ -61,7 +64,7 @@ fetch("js/downloads.json")
         lightbox.on('slide_before_change',()=>{
             let slide = document.querySelector('.prev')
             let iframe = slide.querySelector('iframe').contentWindow.document
-            
+
             iframe.querySelector('audio').pause()
 
             let nextSlide = lightbox.getActiveSlide()
@@ -72,4 +75,4 @@ fetch("js/downloads.json")
     })
 
 // TODO
-// Popular downloadPath
+// Popular downloadPath em downloads.json

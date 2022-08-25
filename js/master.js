@@ -8,8 +8,8 @@ function closeMenu(){
 
 function renderNav(){
   let nav = `<nav id="mobile-nav"> \
-      <img src="img/menu.svg" alt="" class="icon" id="menu-mobile" onclick="showMenu()"> \
-      <img src="img/Reduzido_MonoBranco.png" alt="" class="logo"> \
+      <img src="img/menu.svg" alt="Ícone de menu 'Hamburguer'" class="icon" id="menu-mobile" onclick="showMenu()"> \
+      <img src="img/Reduzido_MonoBranco.png" alt="Logotipo do TRE-PR em branco" class="logo"> \
     </nav> \
     <nav id="navbar"> \
       <div class="container"> \
@@ -31,7 +31,7 @@ function renderNav(){
           </a> \
         </ul> \
         <a href="https://www.tre-pr.jus.br"> \
-          <img src="img/Reduzido_MonoBranco.png" alt=""> \
+          <img src="img/Reduzido_MonoBranco.png" alt="Logotipo do TRE-PR em branco"> \
         </a> \
       </div> \
       <div class="close-icon" onclick="closeMenu()">X</div> \
@@ -53,16 +53,16 @@ function renderFooter(){
     </div> \
     <div class="logos"> \
       <a href="https://www.instagram.com/treparana/" target="_blank"> \
-        <img src="img/icons/Instagram.png" alt="" width="38px"> \
+        <img src="img/icons/Instagram.png" alt="Logotipo do instagrm em branco" width="38px"> \
       </a> \
       <a href="https://pt-br.facebook.com/treparana" target="_blank"> \
-        <img src="img/icons/Facebook.png" alt="" width="38px"> \
+        <img src="img/icons/Facebook.png" alt="Logotipo do Facebook em branco" width="38px"> \
       </a> \
       <a href="https://www.tiktok.com/@tre_pr" target="_blank"> \
-        <img src="img/icons/Tiktok.png" alt="" width="38px"> \
+        <img src="img/icons/Tiktok.png" alt="Logotipo do Tiktok em branco" width="38px"> \
       </a> \
       <a href="https://tre-pr.jus.br/" target="_blank"> \
-        <img src="img/icons/Website.png" alt="" width="38px"> \
+        <img src="img/icons/Website.png" alt="Ícone representando a internet em branco" width="38px"> \
       </a> \
     </div> \
     <div class="container"> \
@@ -120,8 +120,3 @@ function renderFooter(){
 }
 
 renderFooter();
-
-// TODO
-/*
-  - Adicionar footer em todas as páginas
-*/
