@@ -28,6 +28,8 @@ class Modal {
     }
 }
 
+// MUDAR PARA A URL NA PRODUÇÃO
+// fetch("https://www.sabia.tre-pr.jus.br/js/downloads.json")
 fetch("js/downloads.json")
     .then(response => response.json())
     .then(data => {

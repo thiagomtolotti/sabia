@@ -90,7 +90,7 @@ function renderFooter(){
         </div> \
       </div> \
       <div class="credito-container"> \
-        <h3>Sonoras de rádio</h3> \
+        <h3>Sonoras</h3> \
         <div class="credito"> \
           <p>Seção de Audiovisual</p> \
           <p>Produção</p> \
