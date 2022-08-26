@@ -5,7 +5,7 @@ class Modal {
         this.imgPath = obj.imgPath;
         this.link = obj.link;
         this.downloadPath = obj.downloadPath;
-        this.crimeDownload = obj.crimeName.replaceAll(' ', '_') + obj.extension;
+        this.crimeDownload = '' //COLOCAR AQUI O LINK PARA DOWNLOAD
         this.altTag = obj.altTag
 
         this.render();

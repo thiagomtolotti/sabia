@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="368" height="531" viewBox="0 0 368 531">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.279" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4eadb7"/>
+      <stop offset="1" stop-color="#3b828a"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_196" data-name="Retângulo 196" width="368" height="518" fill="#e74f1d"/>
+    </clipPath>
+  </defs>
+  <g id="bg" transform="translate(-200 -1535)">
+    <rect id="Retângulo_212" data-name="Retângulo 212" width="368" height="518" transform="translate(200 1535)" fill="url(#linear-gradient)"/>
+    <g id="Grupo_de_máscara_10" data-name="Grupo de máscara 10" transform="translate(200 1535)" opacity="0.8" clip-path="url(#clip-path)">
+      <path id="Caminho_227" data-name="Caminho 227" d="M176.154,1527.877s170.769-33.205,227.692,67.794,217.692,99.615,217.692,177.786-50,208.224-50,208.224l-457.692-20.061Z" transform="translate(-200 -1422.243)" fill="rgba(0,0,0,0.05)"/>
+      <path id="Caminho_225" data-name="Caminho 225" d="M203.635,1677.616s268.958,89.216,263.446,363.8S98.477,1930.3,98.477,1930.3Z" transform="translate(-200 -1475.289)" fill="rgba(0,0,0,0.05)"/>
+      <path id="Caminho_224" data-name="Caminho 224" d="M206.576,1870.679s165.754-3.1,165.754,191.653-199.581,0-199.581,0Z" transform="translate(-208.035 -1533.674)" fill="rgba(0,0,0,0.04)"/>
+    </g>
+    <rect id="Retângulo_213" data-name="Retângulo 213" width="368" height="227" transform="translate(200 1839)" fill="#fcfaf7"/>
+  </g>
+</svg>

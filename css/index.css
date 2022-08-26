@@ -30,7 +30,7 @@
 /* Downloads */
 #downloads{
   background: var(--yellow) url("../img/bg_02.svg") no-repeat bottom center;
-  background-size: contain;
+  background-size: 100%;
   padding-bottom: 10vh;
 }
 .downloads-container{
@@ -44,24 +44,71 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+#downloads h2{
+  max-width: 768px;
+  margin: 1em auto;
+}
+.downloads-container .container > a{
+  margin: 25px;
+}
 .download{
-  box-shadow: 5px 5px 0 var(--dark-orange);
+  padding: 30px 25px;
 
-  background-color: var(--orange);
-  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  padding: 15px 0 0;
-  margin: 50px 30px;
+  text-align: center;
 
-  max-width: 300px;
+  width: calc(100% - 50px);
+  max-width: 280px;
+  height: 520px;
+
+  /* Otimizar em 1 ou 2 declarações */
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 30px rgba(0,0,0,.3);
 }
 .download h3{
-    text-shadow: 3px 3px 0 var(--dark-orange);
-    margin: 15px auto;
+  margin: 0 auto;
+  text-shadow: 3px 3px 0 #0000004D;
 }
-.download img{
-  margin: 30px 0;
+.download p{
+  color: var(--white);
+  font-weight: 600;
+  width: 85%;
+  margin: 1em auto;
 }
+.download button{
+  background-color: var(--orange);
+  color: var(--white);
+
+  font-size: 24px;
+  font-weight: 600;
+  padding: 12px;
+  width: 100%;
+  border: none;
+
+  box-shadow: 0 0 15px rgba(0,0,0,.3);
+
+  cursor: pointer;
+}
+.download > img{
+  margin: 20px auto 35px;
+}
+.blue{
+  background-color: var(--blue) !important;
+}
+.green{
+  background-color: var(--green) !important;
+}
+.red{
+  background-color: var(--red) !important;
+}
+
+/* TODO */
+/* - Animação olho fechando */
 
 /* Sobre */
 #sobre{
@@ -107,7 +154,6 @@
     transition: .5s ease-in-out;
   }
   #downloads .download:hover{
-    box-shadow: 15px 15px 0 var(--dark-orange);
     transform: scale(1.05);
   }
 
@@ -134,9 +180,6 @@
   #hero div p{
     max-width: 360px;
   }
-  .download{
-    width: 250px;
-  }
 
   /* Sobre */
   #sobre{
@@ -158,16 +201,5 @@
 @media screen and (min-width: 1440px){
   #downloads .downloads-container{
     margin: 20vh auto;
-  }
-  .download{
-    margin: 10px 50px;
-    width: auto;
-    max-width: 300px;
-  }
-  .download h3{
-    font-size: 2.7em;
-  }
-  .download img{
-    margin: 50px 0;
   }
 }
