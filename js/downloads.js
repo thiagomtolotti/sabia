@@ -5,7 +5,7 @@ class Modal {
         this.imgPath = obj.imgPath;
         this.link = obj.link;
         this.downloadPath = obj.downloadPath;
-        this.crimeDownload = '' //COLOCAR AQUI O LINK PARA DOWNLOAD
+        this.crimeDownload = '#' //COLOCAR AQUI O LINK PARA DOWNLOAD
         this.altTag = obj.altTag
 
         this.render();
@@ -19,17 +19,17 @@ class Modal {
                             <p>${this.crimeName}</p> \
                         </div> \
                         <div class="middle"> \
-                            <img src="${this.imgPath}" alt="${this.altTag}"> \
+                            <img src="${this.imgPath}" alt='${this.altTag}'> \
                         </div> \
                         <div class="inferior"> \
                             <div class="botao"> \
                                 <p>Assistir</p> \
                                 <img src="img/icons/play_icon.svg" width="15" height="15"> \
                             </div> \
-                            <a href="${this.crimeDownload}" class="botao"> \
+                            <div onclick='${this.crimeDownload}' class="botao"> \
                                 <p>Download</p> \
                                 <img src="img/icons/download_icon.svg" width="20" height="20"> \
-                            </a> \
+                            </div> \
                         </div> \
                       </a> \
                     </div>`;
@@ -45,7 +45,7 @@ fetch("js/downloads.json")
             let obj = {
                 title: `Crime ${i+1}`,
                 crimeName: data.crimes[i],
-                imgPath: `img/crimes/crime_${i+1}.jpg`,
+                imgPath: `img/crimes/crime_${i+1}.png`,
                 altTag: data.altTag[i],
                 link: '',
                 downloadPath: data[key].downloadPath[i],
