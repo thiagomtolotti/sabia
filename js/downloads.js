@@ -12,24 +12,32 @@ class Modal {
     }
 
     render(){
-      console.log(this.altTag)
       let modal = `<div class='modal-download'>\
                       <a href="${this.link}" class="glightbox"> \
-                        <h2>${this.titulo}</h2>\
-                        <p>${this.crimeName}</p>\
-                        <img src='${this.imgPath}' alt="${this.altTag}">\
-                        <a download='${this.crimeDownload}' href='${this.linkDownload}'>\
-                            <img src='img/download_icon.svg' alt='' class='download-icon'>\
-                        </a>\
-                      </a>
+                        <div class="superior"> \
+                            <h2>${this.titulo}</h2> \
+                            <p>${this.crimeName}</p> \
+                        </div> \
+                        <div class="middle"> \
+                            <img src="${this.imgPath}" alt="${this.altTag}"> \
+                        </div> \
+                        <div class="inferior"> \
+                            <div class="botao"> \
+                                <p>Assistir</p> \
+                                <img src="img/icons/play_icon.svg" width="15" height="15"> \
+                            </div> \
+                            <a href="${this.crimeDownload}" class="botao"> \
+                                <p>Download</p> \
+                                <img src="img/icons/download_icon.svg" width="20" height="20"> \
+                            </a> \
+                        </div> \
+                      </a> \
                     </div>`;
 
-  		document.querySelector("#modal-container .container").insertAdjacentHTML("beforeend", modal)
+  		document.querySelector("#modal-container").insertAdjacentHTML("beforeend", modal)
     }
 }
 
-// MUDAR PARA A URL NA PRODUÇÃO
-// fetch("https://www.sabia.tre-pr.jus.br/js/downloads.json")
 fetch("js/downloads.json")
     .then(response => response.json())
     .then(data => {
@@ -55,25 +63,27 @@ fetch("js/downloads.json")
         }
 
         const lightbox = GLightbox();
-        lightbox.on('slide_after_load', ()=>{
-            let iframe = document.querySelectorAll('.gslide.loaded:not(.current) iframe')
+        if(key === "sonoras"){
+            lightbox.on('slide_after_load', ()=>{
+                let iframe = document.querySelectorAll('.gslide.loaded:not(.current) iframe')
 
-            iframe.forEach((iframe)=>{
-                let audio = iframe.contentWindow.document.querySelector('audio')
-                audio.pause();
+                iframe.forEach((iframe)=>{
+                    let audio = iframe.contentWindow.document.querySelector('audio')
+                    audio.pause();
+                })
             })
-        })
-        lightbox.on('slide_before_change',()=>{
-            let slide = document.querySelector('.prev')
-            let iframe = slide.querySelector('iframe').contentWindow.document
+            lightbox.on('slide_before_change',()=>{
+                let slide = document.querySelector('.prev')
+                let iframe = slide.querySelector('iframe').contentWindow.document
 
-            iframe.querySelector('audio').pause()
+                iframe.querySelector('audio').pause()
 
-            let nextSlide = lightbox.getActiveSlide()
-            let nextIFrame = nextSlide.querySelector('iframe').contentWindow.document
+                let nextSlide = lightbox.getActiveSlide()
+                let nextIFrame = nextSlide.querySelector('iframe').contentWindow.document
 
-            nextIFrame.querySelector('audio').play()
-        })
+                nextIFrame.querySelector('audio').play()
+            })
+        }
     })
 
 // TODO

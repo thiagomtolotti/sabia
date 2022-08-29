@@ -4,108 +4,125 @@ h1{
     font-size: 4em;
     letter-spacing: 3px;
 
-    color: var(--orange);
-    text-shadow: 3px 3px 0 var(--dark-orange);
+    color: var(--main-color);
+    text-shadow: 4px 4px 0 var(--darker-color);
 
-    margin: 1em 0;
+    margin: .75em 0;
 }
-
-#modal-container .container, #card-container .container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  max-width: 1800px;
-  margin: 0 auto;
-  margin-bottom: 20vh;
-}
-.modal-download a:first-child{
-  color: var(--white);
-
-  padding: 25px;
+p{
   text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+
+  padding: 0 25px;
+}
+body{
+  background: url('../img/bg_downloads/bg_downloads.svg');
+  background-position: -10vw -50vh;
+}
+body > p > a{
+  text-decoration: underline;
+  color: var(--main-color);
+}
+body > p > a:visited{
+  color: var(--darker-color);
+}
+
+#modal-container{
+  margin: 5em auto;
+  max-width: 1600px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+}
+.modal-download{
+  width: 365px;
+  margin: 25px auto;
+  max-width: calc(100% - 50px);
+
+  background-color: var(--white);
+
+  text-align: center;
+  font-size: 1em;
+
+  box-shadow: 0 0 15px rgba(0,0,0,.3);
+
+  transition: .3s ease-out;
+  cursor: pointer;
 
   display: flex;
   flex-direction: column;
-  height: 100%;
-}
-.modal-download{
-    background-color: var(--green);
-    color: var(--white);
-
-    margin: 50px 25px;
-    border-radius: 25px;
-
-    position: relative;
-
-    width: 100%;
-    max-width: 340px;
-
-    display: flex;
-    flex-direction: column;
-
-    transition: .3s ease-in-out;
-    box-shadow: 0 0 0 var(--dark-green);
+  justify-content: space-between;
 }
 .modal-download h2{
-  font-size: 3em;
-  margin: 10px auto;
-}
-.modal-download p{
-    font-size: 1.5em;
-    line-height: 1.2;
-    font-weight: 500;
-    margin: 0 auto .7em;
-}
-.modal-download img{
-  margin: auto 25px 25px;
-}
-.modal-download .download-icon{
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
+  font-size: 3.2em;
   margin: 0;
-  z-index: 2;
 }
-.modal-download:hover{
-  box-shadow: 0 12px 0 var(--dark-green);
-  transform: scale(1.05);
+.modal-download a:visited{
+  color: var(--white);
 }
+.modal-download > img{
+  position: relative;
+}
+.superior{
+  padding: 25px;
+  color: var(--white);
+  background-color: var(--main-color);
+}
+.superior p{
+  margin-bottom: 0;
+}
+.middle{
+  background: var(--main-color);
+  background: linear-gradient(0deg, var(--white) 50%, var(--main-color) 50%);
+}
+.inferior{
+  background-color: var(--white);
+  display: flex;
+  color: var(--main-color);
 
-.card a:first-child{
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 25px 15px 15px;
 }
-.card{
-  overflow: hidden;
-  max-width: 260px;
-}
-.card img:first-child{
-  margin: 0;
-}
-#card-container{
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.card::after{
-  content: '';
+.botao{
+  display: inline-flex;
+  padding: 15px 20px;
+  
+  transition: .5s ease-out;
   cursor: pointer;
-  display: block;
-  background: rgba(0,0,0,.3);
-  background: linear-gradient(0deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.1) 70%);
-
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: .3s ease-in-out;
 }
-.card:hover::after{
-  opacity: 1;
+.botao p{
+  color: var(--main-color);
+  margin: 0 10px 0 0;
+  padding: 0;
+
+  line-height: 25px;
+}
+.botao img{
+  margin: auto;
+}
+.botao img{
+  fill: var(--main-color);
 }
 
-.hidden{
-  display: none;
+@media screen and (min-width:990px){
+  h1{
+    margin-top: 1.2em;
+    font-size: 5em;
+  }
+  body > p{
+    max-width: 40%;
+    margin: 0 auto;
+  }
+
+  .modal-download:hover{
+    transform: scale(1.05);
+  }
+  .botao:hover{
+    background-color: rgba(0,0,0,.15);
+  }
 }
 
 audio{
@@ -115,6 +132,7 @@ audio{
 .gslide-inline{
   height: auto!important;
 }
+
 iframe body, .iframe-container{
   height: 100%;
   padding: 0;
@@ -123,9 +141,3 @@ iframe body, .iframe-container{
   flex-direction: column;
   justify-content: flex-end;
 }
-
-/* TODO */
-
-/*
-  - Imagens Downloads (cards tb)
-*/
