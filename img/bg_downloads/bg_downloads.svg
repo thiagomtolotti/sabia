@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4096" height="7481" viewBox="0 0 4096 7481">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4096" height="4916" viewBox="0 0 4096 4916">
   <defs>
     <clipPath id="clip-path">
-      <rect id="Retângulo_229" data-name="Retângulo 229" width="4096" height="7481" transform="translate(-38 625)" fill="#fff" stroke="#707070" stroke-width="1"/>
+      <rect id="Retângulo_229" data-name="Retângulo 229" width="4096" height="4916" transform="translate(-38 625)" fill="#fff" stroke="#707070" stroke-width="1"/>
     </clipPath>
   </defs>
   <g id="Grupo_de_máscara_20" data-name="Grupo de máscara 20" transform="translate(38 -625)" clip-path="url(#clip-path)">
     <path id="Subtração_3" data-name="Subtração 3" d="M0,582.977,4143.069,0V1597.818L0,2180.088Z" transform="translate(-58.17 -865.118)" fill="#f0eeeb"/>
-    <path id="Subtração_5" data-name="Subtração 5" d="M0,582.977,4143.069,0V1597.818L0,2180.088Z" transform="translate(-58.17 6651.028)" fill="#f0eeeb"/>
-    <path id="Subtração_4" data-name="Subtração 4" d="M0,1597.112l4143.069,582.977V582.271L0,0Z" transform="translate(4084.899 5073.044) rotate(180)" fill="#f0eeeb"/>
+    <path id="Subtração_5" data-name="Subtração 5" d="M0,582.977,4143.069,0V1597.818L0,2180.088Z" transform="translate(-58.17 4061.059)" fill="#f0eeeb"/>
+    <path id="Subtração_4" data-name="Subtração 4" d="M0,1597.112l4143.069,582.977V582.271L0,0Z" transform="translate(4084.899 3778.059) rotate(180)" fill="#f0eeeb"/>
   </g>
 </svg>
