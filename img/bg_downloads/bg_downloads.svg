@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2084" height="1935" viewBox="0 0 2084 1935">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2053" height="1935" viewBox="0 0 2053 1935">
   <defs>
     <clipPath id="clip-path">
-      <rect id="Retângulo_227" data-name="Retângulo 227" width="2084" height="1935" transform="translate(-69 122)" fill="#fff" stroke="#707070" stroke-width="1"/>
+      <rect id="Retângulo_227" data-name="Retângulo 227" width="2053" height="1935" transform="translate(-38 122)" fill="#fff" stroke="#707070" stroke-width="1"/>
     </clipPath>
   </defs>
-  <g id="Grupo_de_máscara_19" data-name="Grupo de máscara 19" transform="translate(69 -122)" clip-path="url(#clip-path)">
+  <g id="Grupo_de_máscara_19" data-name="Grupo de máscara 19" transform="translate(38 -122)" clip-path="url(#clip-path)">
     <path id="Subtração_1" data-name="Subtração 1" d="M-1573.11-1643.564l2076.592-292.2V-1134.9L-1573.11-843.058Z" transform="translate(1525 1563)" fill="#f0eeeb"/>
     <path id="Subtração_2" data-name="Subtração 2" d="M-1864.578-1929,265.206-1591.675l-32.261,471.033H-1864.578Z" transform="translate(1826.093 3178.037)" fill="#f0eeeb"/>
   </g>
