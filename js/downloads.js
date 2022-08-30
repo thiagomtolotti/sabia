@@ -96,7 +96,7 @@ fetch("js/downloads.json")
 
             // Pega o atributo data-download do HTML e redireciona para ele
             let downloadLink = event.target.closest('.download').getAttribute('data-download')
-            location.href = downloadLink;
+            window.open(downloadLink, "_blank");
           })
         })
     })
