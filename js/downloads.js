@@ -5,8 +5,7 @@ class Modal {
         this.imgPath = obj.imgPath;
         this.link = obj.link;
         this.downloadPath = obj.downloadPath;
-        this.crimeDownload = '#' //COLOCAR AQUI O LINK PARA DOWNLOAD
-        this.altTag = obj.altTag
+        this.altTag = obj.altTag;
 
         this.render();
     }
@@ -24,11 +23,11 @@ class Modal {
                         <div class="inferior"> \
                             <div class="botao"> \
                                 <p>Assistir</p> \
-                                <img src="img/icons/play_icon.svg" width="15" height="15"> \
+                                <div class="play-icon"></div> \
                             </div> \
-                            <div onclick='${this.crimeDownload}' class="botao"> \
+                            <div data-download='${this.downloadPath}' class="botao download"> \
                                 <p>Download</p> \
-                                <img src="img/icons/download_icon.svg" width="20" height="20"> \
+                                <div class="download-icon"></div> \
                             </div> \
                         </div> \
                       </a> \
@@ -38,6 +37,7 @@ class Modal {
     }
 }
 
+// <div class="play-icon">
 fetch("js/downloads.json")
     .then(response => response.json())
     .then(data => {
@@ -48,15 +48,17 @@ fetch("js/downloads.json")
                 imgPath: `img/crimes/crime_${i+1}.png`,
                 altTag: data.altTag[i],
                 link: '',
-                downloadPath: data[key].downloadPath[i],
+                downloadPath: '',
                 extension: (key === "videos") ? ".mp4" : ".mp3"
             }
 
             if(key === "sonoras"){
                 let index = ('0'+(i+1)).slice(-2)
                 obj.link = `multimedia/iframes/iframe.html?id=${index}`
-            }else{
+                obj.downloadPath = `https://www.justicaeleitoral.jus.br/audios/tre-pr-voce-sabia-sabia-sonora-01/@@download/file`
+            }else if(key === "videos"){
                 obj.link = data[key].links[i]
+                obj.downloadPath = `https://justicaeleitoral.jus.br/videos/tre-pr-crime-${i+1}-${obj.crimeName.replaceAll(" ", "-").toLowerCase()}/@@download/file`
             }
 
             new Modal(obj)
@@ -84,7 +86,21 @@ fetch("js/downloads.json")
                 nextIFrame.querySelector('audio').play()
             })
         }
+
+        // Permite baixar os arquivos sem abrir a lightbox
+        document.querySelectorAll(".botao.download").forEach((botao)=>{
+          botao.addEventListener("click",(event)=>{
+            // Previne que o lightbox abra
+            event.stopPropagation();
+            event.preventDefault();
+
+            // Pega o atributo data-download do HTML e redireciona para ele
+            let downloadLink = event.target.closest('.download').getAttribute('data-download')
+            location.href = downloadLink;
+          })
+        })
     })
+
 
 // TODO
 // Popular downloadPath em downloads.json

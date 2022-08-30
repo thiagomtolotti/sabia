@@ -49,7 +49,11 @@ function renderFooter(){
       <p><strong>2022</strong></p> \
       <p><strong>Tribunal Regional Eleitoral do Paraná</strong></p> \
       <p>Rua João Parolin, 224 - Prado Velho - Curitiba - PR<br>CEP 80.220-290 - Telefone (41) 3330-8880</p> \
-      <p>Contato: <a href="mailto:liods@tre-pr.jus.br" target="_blank">liods@tre-pr.jus.br</a></p>
+      <p>Contato: <a href="mailto:liods@tre-pr.jus.br" target="_blank">liods@tre-pr.jus.br</a></p> \
+      <div class="cc"> \
+        <img src="../img/icons/cc.svg">\
+        <p>Essa obra está sob licença Creative Commons BY-NC-ND, o que quer dizer que você pode compartilhar, distribuir e transmitir a obra contanto que: atribua a autoria original, não a utilize para fins comerciais e não altere, transforme ou crie em cima do trabalho original.</p>\
+      </div>
     </div> \
     <div class="logos"> \
       <a href="https://www.instagram.com/treparana/" target="_blank"> \
