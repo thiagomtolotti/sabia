@@ -1,0 +1,223 @@
+h1{
+    font-family: var(--title);
+    text-align: center;
+    font-size: 4em;
+    letter-spacing: 3px;
+
+    color: var(--main-color);
+    text-shadow: 4px 4px 0 var(--darker-color);
+
+    margin: 0 0 .5em;
+}
+header{
+  background: #F0EEEB;
+  border-bottom: 3px solid var(--main-color);
+  padding: 75px 0;
+}
+p{
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+
+  padding: 0 25px;
+}
+header a{
+  text-decoration: underline;
+  color: var(--main-color);
+}
+header a:visited{
+  color: var(--darker-color);
+}
+
+#modal-container, #card-container{
+  margin: 5em auto;
+  max-width: 1400px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  justify-content: center;
+}
+#card-container{
+  grid-template-columns: repeat(auto-fit, 250px);
+  gap:50px;
+}
+.modal-download{
+  width: 365px;
+  margin: 25px auto;
+
+  background-color: var(--white);
+
+  text-align: center;
+  font-size: 1em;
+
+  box-shadow: 0 0 15px rgba(0,0,0,.3);
+
+  transition: .3s ease-out;
+  cursor: pointer;
+
+  background: var(--main-color);
+  background: linear-gradient(0deg, var(--white) 40%, var(--main-color) 40%);
+}
+.modal-download .glightbox{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.modal-download h2{
+  font-size: 3.2em;
+  margin: 0;
+}
+.modal-download a:visited{
+  color: var(--white);
+}
+.modal-download > img{
+  position: relative;
+}
+.superior{
+  padding: 25px;
+  color: var(--white);
+  background-color: var(--main-color);
+}
+.superior p{
+  margin-bottom: 0;
+}
+.inferior{
+  display: flex;
+  color: var(--main-color);
+
+  display: flex;
+  justify-content: center;
+
+  padding: 25px 0;
+}
+.botao{
+  display: inline-flex;
+  padding: 15px 20px;
+  margin: 0 10px;
+  color: var(--main-color);
+
+  transition: .5s ease-out;
+  cursor: pointer;
+}
+.botao p{
+  color: var(--main-color);
+  margin: 0 10px 0 0;
+  padding: 0;
+
+  line-height: 25px;
+}
+.botao img{
+  margin: auto;
+}
+.botao img{
+  fill: var(--main-color);
+}
+.play-icon, .download-icon{
+  margin: auto;
+  background-color: var(--main-color);
+}
+.play-icon{
+  width: 15px;
+  height: 15px;
+  -webkit-mask: url('../img/icons/play_icon.svg') no-repeat center;
+  mask: url('../img/icons/play_icon.svg') no-repeat center;
+}
+.download-icon{
+  width: 20px;
+  height: 20px;
+  -webkit-mask: url('../img/icons/download_icon.svg') no-repeat center;
+  mask: url('../img/icons/download_icon.svg') no-repeat center;
+}
+
+/* Cards */
+.card{
+  max-width: 250px;
+}
+.aspect-ratio-container{
+  height: 0 !important;
+  padding-top: 150%;
+  position: relative;
+
+  overflow: hidden;
+}
+.aspect-ratio-container img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card .botao{
+  margin: auto;
+  justify-content: center;
+
+  width: 100%;
+  padding: 20px 0;
+}
+.card .botao img{
+  margin: 0;
+}
+
+/* Hovers */
+.modal-download:hover{
+  transform: scale(1.05);
+}
+.botao:hover{
+  background-color: rgba(0,0,0,.15);
+}
+.aspect-ratio-container::after{
+  content: 'Abrir';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  min-height: 375px;
+  opacity: 0;
+
+  transition: .5s ease-out;
+
+  color: var(--white);
+  font-weight: 600;
+}
+.aspect-ratio-container:hover::after{
+  background-color: rgba(0,0,0,.5);
+  opacity: 1;
+}
+
+
+
+@media screen and (min-width:990px){
+  #card-container{
+    width: 80%;
+  }
+  h1{
+    font-size: 5em;
+  }
+  header p{
+    max-width: 40%;
+    margin: 0 auto;
+  }
+}
+
+/* Configurações do Lightbox das sonoras */
+audio{
+  width: 100%;
+  min-height: 50px;
+}
+.gslide-inline{
+  height: auto!important;
+}
+
+iframe body, .iframe-container{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex!important;
+  flex-direction: column;
+  justify-content: flex-end;
+}

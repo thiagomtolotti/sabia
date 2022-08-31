@@ -1,0 +1,11 @@
+data = {
+    "crimes" : ["Violação do sigilo do voto", "Boca de urna", "Falsidade ideológica", "Injúria e difamação eleitoral", "Divulgação de notícia falsa na propaganda eleitoral", "Transporte de eleitores", "Boca de urna virtual", "Calúnia e difamação na propaganda eleitoral", "Compra de voto", "Divulgação de pesquisa eleitoral fraudulenta"],
+    "altTag": ["Ilustração de um sabiá de óculos olhando para um celular.","Ilustração de folhetos com o dizer 'Vote' na parte superior, abaixo uma ilustração do sabiá do peitoral para cima","Ilustração de um sabiá de óculos segurando um grande pedaço de papel na mão esquerda e na direita uma lupa.","Ilustração de um sabiá segurando um folheto ilustrando um político com os dizeres 'Não vote!' na parte superior","Ilustração de um sabiá de óculos repousado sobre um galho","Ilustração de um sabiá com capacete e óculos de sol esportivo, o sabiá possui uma gravata borboleta verde com bolinhas em verde-claro","Ilustração de um notebook, na tela é possível identificar o logotipo do Twitter estilizado com o sabiá","Ilustração de uma televisão sobre um móvel, na televisão se lê 'Vote'","Ilustração de um sabiá com a mão aberta para frente em sinal de reprovação, o sabiá usa óculos de grau e gravata borboleta","Ilustração de um sabiá lendo um jornal com uma feição de curiosidade"],
+    "videos" : {
+        "downloadPath": ["", ""],
+        "links": ["https://www.youtube-nocookie.com/embed/X3u7z6Qjq9k", "https://youtu.be/itsGRUBnx30","https://youtu.be/E7XCMoZt8qk","https://youtu.be/DsK1LOPnkYE","https://youtu.be/rh64PzS8Ymo", "https://youtu.be/126pCrh7L18", "https://youtu.be/wB_vFZPtnpY","https://youtu.be/VRCOPlxyO04","https://youtu.be/waI-HKtDKEY","https://youtu.be/mVjn6DpSWlY"]
+    },
+    "sonoras" : {
+        "downloadPath": ["", ""]
+    }
+}

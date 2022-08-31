@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1107" viewBox="0 0 1920 1107">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_226" data-name="Retângulo 226" width="1920" height="1107" transform="translate(0 1314)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <filter id="Caminho_271" x="-2189" y="903" width="6298" height="6298" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_de_máscara_18" data-name="Grupo de máscara 18" transform="translate(0 -1314)" clip-path="url(#clip-path)">
+    <g id="Grupo_158" data-name="Grupo 158" transform="translate(1 180)">
+      <path id="Caminho_231" data-name="Caminho 231" d="M-35.152,1397.8s140.6-248.764,498.721-248.764,485.517,203.337,927.138,203.337,571.223-164.4,571.223-164.4V2230.622H-35.152Z" transform="translate(0 -15)" fill="#f29818"/>
+      <path id="Caminho_230" data-name="Caminho 230" d="M-60.391,1712.664S67.5,1394.756,398.746,1394.756s549.914,193.337,932.646,193.337,610.762-193.337,610.762-193.337v835.866h-1985Z" transform="translate(0 -15)" fill="#eb9317"/>
+      <path id="Caminho_229" data-name="Caminho 229" d="M-41.743,1963.135S164.409,1731.58,491.792,1731.58s713.355,155.409,1000.656,155.409,517.815-259.447,517.815-259.447l-8.792,669.927H-41.743Z" transform="translate(6.591 -103.848)" fill="#e38f16"/>
+      <path id="Caminho_228" data-name="Caminho 228" d="M0,2058.244s75.659,53.945,371.8,53.945,741.087-246.326,1088.362-204.337S1929.984,2051.7,1929.984,2051.7v194.542H-26.364Z" transform="translate(0 -5.247)" fill="#de8b16"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 1314)" filter="url(#Caminho_271)">
+      <path id="Caminho_271-2" data-name="Caminho 271" d="M3104,0C4818.292,0,6208,1389.708,6208,3104S4818.292,6208,3104,6208,0,4818.292,0,3104,1389.708,0,3104,0Z" transform="translate(-2144 948)" fill="#2ba58e"/>
+    </g>
+  </g>
+</svg>
