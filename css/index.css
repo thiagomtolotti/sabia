@@ -231,3 +231,9 @@
     margin: 0vh auto;
   }
 }
+
+@media screen and (max-width: 1365px){
+  .downloads-container{
+    grid-template-columns: repeat(2, 300px);
+  }
+}
