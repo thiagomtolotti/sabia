@@ -8,8 +8,8 @@ function closeMenu(){
 
 function renderNav(){
   let nav = `<nav id="mobile-nav"> \
-      <img src="img/menu.svg" alt="Ícone de menu 'Hamburguer'" class="icon" id="menu-mobile" onclick="showMenu()"> \
-      <img src="img/Reduzido_MonoBranco.png" alt="Logotipo do TRE-PR em branco" class="logo"> \
+      <img src="dist/img/menu.svg" alt="Ícone de menu 'Hamburguer'" class="icon" id="menu-mobile" onclick="showMenu()"> \
+      <img src="dist/img/Reduzido_MonoBranco.webp" alt="Logotipo do TRE-PR em branco" class="logo"> \
     </nav> \
     <nav id="navbar"> \
       <div class="container"> \
@@ -17,7 +17,7 @@ function renderNav(){
           <a href="./index.html"> \
             <li>Home</li> \
           </a> \
-          <a href="https://www.tre-pr.jus.br/++theme++justica_eleitoral/pdfjs/web/viewer.html?file=https://www.tre-pr.jus.br/eleitor/sabia/arquivos/tre-pr-voce-sabia-sabia-cartilha/@@download/file/tre-pr-cartilha-voce-sabia-sabaia-v3.pdf" target="_blank"> \
+          <a href="https://apps.tre-pr.jus.br/files/outros/tre-pr-cartilha-voce-sabia-sabaia-v3-29082022.pdf" target="_blank"> \
             <li>Cartilha</li> \
           </a> \
           <a href="./videos.html"> \
@@ -31,7 +31,7 @@ function renderNav(){
           </a> \
         </ul> \
         <a href="https://www.tre-pr.jus.br"> \
-          <img src="img/Reduzido_MonoBranco.png" alt="Logotipo do TRE-PR em branco"> \
+          <img src="dist/img/Reduzido_MonoBranco.webp" alt="Logotipo do TRE-PR em branco"> \
         </a> \
       </div> \
       <div class="close-icon" onclick="closeMenu()">X</div> \
@@ -46,27 +46,27 @@ renderNav()
 function renderFooter(){
   let footer = `<footer> \
     <div class=""> \
+      <p>Contato: <a href="mailto:liods@tre-pr.jus.br" target="_blank">liods@tre-pr.jus.br</a></p> \
       <p><strong>2022</strong></p> \
       <p><strong>Tribunal Regional Eleitoral do Paraná</strong></p> \
       <p>Rua João Parolin, 224 - Prado Velho - Curitiba - PR<br>CEP 80.220-290 - Telefone (41) 3330-8880</p> \
-      <p>Contato: <a href="mailto:liods@tre-pr.jus.br" target="_blank">liods@tre-pr.jus.br</a></p> \
       <div class="cc"> \
-        <img src="img/icons/cc.svg">\
+        <img src="dist/img/icons/cc.svg">\
         <p>Essa obra está sob licença Creative Commons BY-NC-ND, o que quer dizer que você pode compartilhar, distribuir e transmitir a obra contanto que: atribua a autoria original, não a utilize para fins comerciais e não altere, transforme ou crie em cima do trabalho original.</p>\
       </div>
     </div> \
     <div class="logos"> \
       <a href="https://www.instagram.com/treparana/" target="_blank"> \
-        <img src="img/icons/Instagram.png" alt="Logotipo do instagrm em branco" width="38px"> \
+        <img src="dist/img/icons/Instagram.webp" alt="Logotipo do instagrm em branco" width="38px"> \
       </a> \
       <a href="https://pt-br.facebook.com/treparana" target="_blank"> \
-        <img src="img/icons/Facebook.png" alt="Logotipo do Facebook em branco" width="38px"> \
+        <img src="dist/img/icons/Facebook.webp" alt="Logotipo do Facebook em branco" width="38px"> \
       </a> \
       <a href="https://www.tiktok.com/@tre_pr" target="_blank"> \
-        <img src="img/icons/Tiktok.png" alt="Logotipo do Tiktok em branco" width="38px"> \
+        <img src="dist/img/icons/Tiktok.webp" alt="Logotipo do Tiktok em branco" width="38px"> \
       </a> \
       <a href="https://tre-pr.jus.br/" target="_blank"> \
-        <img src="img/icons/Website.png" alt="Ícone representando a internet em branco" width="38px"> \
+        <img src="dist/img/icons/Website.webp" alt="Ícone representando a internet em branco" width="38px"> \
       </a> \
     </div> \
     <div class="container"> \
