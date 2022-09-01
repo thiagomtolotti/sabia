@@ -3,15 +3,11 @@ function showMenu(){
 }
 
 function closeMenu(){
-    document.querySelector("#navbar").style.left = "-100vw"
+    document.querySelector("#navbar").style.left = "-120vw"
 }
 
 function renderNav(){
-  let nav = `<nav id="mobile-nav"> \
-      <img src="dist/img/menu.svg" alt="Ícone de menu 'Hamburguer'" class="icon" id="menu-mobile" onclick="showMenu()"> \
-      <img src="dist/img/Reduzido_MonoBranco.webp" alt="Logotipo do TRE-PR em branco" class="logo"> \
-    </nav> \
-    <nav id="navbar"> \
+  let nav = `<nav id="navbar"> \
       <div class="container"> \
         <ul> \
           <a href="./index.html"> \
@@ -35,7 +31,11 @@ function renderNav(){
         </a> \
       </div> \
       <div class="close-icon" onclick="closeMenu()">X</div> \
-  </nav>`;
+  </nav> \
+  <nav id="mobile-nav"> \
+      <img src="dist/img/menu.svg" alt="Ícone de menu 'Hamburguer'" class="icon" id="menu-mobile" onclick="showMenu()"> \
+      <img src="dist/img/Reduzido_MonoBranco.webp" alt="Logotipo do TRE-PR em branco" class="logo"> \
+    </nav>`;
 
   document.body.insertAdjacentHTML("afterbegin", nav);
 }

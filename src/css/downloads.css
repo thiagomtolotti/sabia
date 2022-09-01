@@ -11,7 +11,7 @@ h1{
 }
 header{
   background: #F0EEEB;
-  border-bottom: 3px solid var(--main-color);
+  box-shadow: 0 0 15px rgb(0 0 0 / 50%);
   padding: 75px 0;
 }
 p{
@@ -42,7 +42,7 @@ header a:visited{
   gap:50px;
 }
 .modal-download{
-  width: 365px;
+  width: 280px;
   margin: 25px auto;
 
   background-color: var(--white);
@@ -86,17 +86,16 @@ header a:visited{
 }
 .inferior{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
   color: var(--main-color);
-
-  display: flex;
-  justify-content: center;
-
   padding: 25px 0;
 }
 .botao{
   display: inline-flex;
   padding: 15px 20px;
-  margin: 0 10px;
+  margin: 0 auto;
   color: var(--main-color);
 
   transition: .5s ease-out;
@@ -189,7 +188,18 @@ header a:visited{
   opacity: 1;
 }
 
-
+@media screen and (min-width: 380px){
+  .modal-download{
+    width: 380px;
+  }
+  .inferior{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .botao{
+    margin: 0 10px;
+  }
+}
 
 @media screen and (min-width:990px){
   #card-container{

@@ -92,7 +92,7 @@ a{
     position: fixed;
     top: 0;
     z-index: 99;
-    left: -100vw;
+    left: -120vw;
 
     transition: ease-in-out .7s;
 
@@ -100,10 +100,8 @@ a{
     font-size: clamp(24px, 5vh , 36px);
 }
 #navbar ul{
-    /* width: 100%;
-    margin: auto;
-    margin-bottom: 10vh;
-    padding-top: 75px; */
+    width: 100%;
+    margin: 20vh auto;
 }
 #navbar li{
     list-style: none;

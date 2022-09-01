@@ -25,7 +25,7 @@ class Modal {
                                 <p>Assistir</p> \
                                 <div class="play-icon"></div> \
                             </div> \
-                            <div data-download='${this.downloadPath}' class="botao download"> \
+                            <div data-download='${this.downloadPath}' class="botao download" download> \
                                 <p>Download</p> \
                                 <div class="download-icon"></div> \
                             </div> \
@@ -52,10 +52,14 @@ if(data != "" && data!= null){
     if(key === "sonoras"){
         let index = ('0'+(i+1)).slice(-2)
         obj.link = `multimedia/iframes/iframe.html?id=${index}`
-        obj.downloadPath = `https://www.justicaeleitoral.jus.br/audios/tre-pr-voce-sabia-sabia-sonora-01/@@download/file`
+        obj.downloadPath = `https://www.justicaeleitoral.jus.br/audios/tre-pr-voce-sabia-sabia-sonora-${index}/@@download/file`
     }else if(key === "videos"){
         obj.link = data[key].links[i]
-        obj.downloadPath = `https://justicaeleitoral.jus.br/videos/tre-pr-crime-${i+1}-${obj.crimeName.replaceAll(" ", "-").toLowerCase()}/@@download/file`
+        if(i != 3){
+          obj.downloadPath = `https://www.justicaeleitoral.jus.br/videos/tre-pr-crime-${i+1}-${obj.crimeName.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replaceAll(" ", "-").toLowerCase()}/@@download/file`
+        }else{
+          obj.downloadPath = `https://www.justicaeleitoral.jus.br/videos/tre-prt-crime-${i+1}-${obj.crimeName.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replaceAll(" ", "-").toLowerCase()}/@@download/file`
+        }
     }
 
     new Modal(obj)
