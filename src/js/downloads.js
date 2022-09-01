@@ -42,7 +42,7 @@ if(data != "" && data!= null){
     let obj = {
         title: `Crime ${i+1}`,
         crimeName: data.crimes[i],
-        imgPath: `img/crimes/crime_${i+1}.png`,
+        imgPath: `dist/img/crimes/crime_${i+1}.webp`,
         altTag: data.altTag[i],
         link: '',
         downloadPath: '',
